@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Replit
+.cache/
+.local/
+.upm/
+.pythonlibs/
+
+# OS
+.DS_Store
+Thumbs.db

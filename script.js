@@ -24,10 +24,13 @@ function setScreen(screenId) {
 
 // Initialize hidden elements
 [
-  "label4misc", "labelforfood", "labelforpeople", "labelformedia",
-  "inputforfood", "inputformedia", "inputforpeople", "text_inputformisc",
+  "label4misc", "labelforfood", "labelforpeople",
+  "inputforfood", "inputforpeople", "text_inputformisc",
   "image2", "image3"
-].forEach(hideElement);
+].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) hideElement(id);
+});
 
 // Navigation buttons
 document.getElementById("start").addEventListener("click", () => {
