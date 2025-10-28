@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Review App</title>
+    <style>
+      .screen { display: none; }
+      #home { display: block; }
+      .hidden { display: none; }
+      .star {
+        font-size: 30px;
+        color: gray;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Screens -->
+    <div id="home" class="screen">
+      <h1>Welcome</h1>
+      <button id="start">Start</button>
+      <button id="Info">Info</button>
+      <img id="image1" src="image1.jpg">
+      <img id="image2" src="image2.jpg" class="hidden">
+      <img id="image3" src="image3.jpg" class="hidden">
+    </div>
+
+    <div id="StartaReview" class="screen">
+      <button id="HomeFromMain">Home</button>
+
+      <select id="category">
+        <option value="">Select Category</option>
+        <option value="Misc">Misc</option>
+        <option value="Food">Food</option>
+        <option value="People">People</option>
+      </select>
+
+      <!-- Input sections -->
+      <label id="label4misc" class="hidden">Misc Review:</label>
+      <input id="text_inputformisc" class="hidden" type="text">
+
+      <label id="labelforfood" class="hidden">Food Review:</label>
+      <input id="inputforfood" class="hidden" type="text">
+
+      <label id="labelforpeople" class="hidden">People Review:</label>
+      <input id="inputforpeople" class="hidden" type="text">
+
+      <div id="stars">
+        <span id="star1" class="star">★</span>
+        <span id="star2" class="star">★</span>
+        <span id="star3" class="star">★</span>
+        <span id="star4" class="star">★</span>
+        <span id="star5" class="star">★</span>
+      </div>
+      <p id="statusLabel">Rate it!</p>
+      <button id="ClearReviewStars">Clear Stars</button>
+
+      <textarea id="inputBox" placeholder="Write your review here..."></textarea>
+      <button id="submitbutn">Submit</button>
+    </div>
+
+    <div id="Information" class="screen">
+      <h2>Information Page</h2>
+      <button id="button1">Home</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
