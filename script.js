@@ -119,7 +119,7 @@ document.getElementById("ClearReviewStars").addEventListener("click", () => {
 // Submit review to Google Script
 document.getElementById("submitbutn").addEventListener("click", () => {
   const userInput = document.getElementById("inputBox").value;
-  const url = "https://script.google.com/macros/s/AKfycbzrih2ApE772Qw8YHp9L0wcyUokxOGqJhME-a_gd_nf6h8TxveJodqvfawSIDizw3Cd/exec";
+  const url = "https://script.google.com/macros/s/AKfycbxrmZTuAg1BtNNOeytwhcvmxxFCOVnA1HNFkRncT02v6ek54THmiSxQ_S-N-6dt2raD/exec";
 
   fetch(url + "?text=" + encodeURIComponent(userInput), { method: "GET", mode: "no-cors" })
     .then(() => setText("statusLabel", "Submitted!"))
